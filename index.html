@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KunVerse - Blog Landing Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Lora:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f7f7f7;
+            line-height: 1.6;
+        }
+        .font-gutenverse {
+            font-family: 'Poppins', sans-serif;
+        }
+        .font-magazine {
+            font-family: 'Lora', serif;
+        }
+        .nav-link:hover {
+            color: #ef4444;
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-800">
+
+    <!-- Header -->
+    <header class="bg-white py-6 md:py-8 shadow-sm">
+        <div class="container mx-auto px-4 flex justify-between items-center">
+            <!-- Left section: Social icons -->
+            <div class="hidden md:flex items-center space-x-4">
+                <a href="#" class="text-gray-500 hover:text-gray-900 transition"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-facebook"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+                <a href="#" class="text-gray-500 hover:text-gray-900 transition"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-twitter"><path d="M22 4s-.7 2.1-2 3.4c-.6.4-1.4.2-1.6.8-.2.5-.2 1.3.4 1.8 1.4 1.1 2.5 2.1 3.5 3.3.4.5.6 1.3.4 1.9-.2.5-1 .8-1.5.8-2 .1-3.6-1.5-4.8-3-.5-.6-1.3-1.4-2.2-1.4-1.2 0-2.3 1.2-3.6 2.5-.6.6-1.2 1.2-2 1.2-1.4 0-2.6-.8-3.6-1.8-.8-1.1-1.3-2.6-.9-4.2.3-1.2 1.2-2.1 2.3-2.8 1.4-.8 3-1.2 4.6-1.2 2.1 0 3.7.8 4.7 2 .8 1 .5 2.6-.3 3.5-1.1 1.2-2.3 2.5-3.6 3.4-.6.4-1.1 1.2-.8 2.1.3.8 1.1 1.3 1.9 1.3.8 0 1.5-.5 2-1 1.4-1.3 2.5-2.8 3.5-4.4.7-1.1 1-2.4.9-3.7-.1-1.4-.6-2.6-1.3-3.7-.8-1.2-1.8-2.3-2.9-3-.7-.5-1.5-.7-2.3-.6-1.2.2-2.1.8-2.7 1.9-.6 1.1-1 2.3-1 3.6 0 1.3.4 2.5 1 3.7.6 1.2 1.6 2.2 2.8 2.8.8.4 1.7.5 2.6.3 1-.1 1.8-.7 2.3-1.6.5-.9.7-2 .4-3-1.1-.9-2.3-1.8-3.4-2.7z"/></svg></a>
+                <a href="#" class="text-gray-500 hover:text-gray-900 transition"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-instagram"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg></a>
+            </div>
+
+            <!-- Center section: Logo -->
+            <div class="flex-grow flex justify-center md:flex-grow-0 md:justify-start">
+                <a href="#" class="text-3xl font-bold uppercase tracking-widest text-gray-900">
+                    <span class="block text-center text-xl md:text-5xl  font-thin">KUN<span class="font-gutenverse">VERSE</span></span>
+                    <span class="block text-xs uppercase tracking-widest text-center text-gray-500 font-magazine">Multipurpose Magazine and Blog Theme</span>
+                </a>
+            </div>
+
+            <!-- Right section: Search and menu icon for mobile -->
+            <div class="flex items-center space-x-4">
+                 <!-- Mobile search and menu button -->
+                <button class="md:hidden text-gray-600 hover:text-gray-900 transition" aria-label="Search">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-search"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+                </button>
+                <button class="md:hidden text-gray-600 hover:text-gray-900 transition" aria-label="Menu">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
+                </button>
+            </div>
+        </div>
+        <!-- Main navigation menu -->
+        <nav class="hidden md:flex justify-center mt-4">
+            <ul class="flex space-x-8 text-sm font-semibold uppercase tracking-wide text-gray-700">
+                <li><a href="#" class="nav-link hover:text-red-500 transition-colors duration-300">Home</a></li>
+                <li><a href="#" class="nav-link hover:text-red-500 transition-colors duration-300">News</a></li>
+                <li><a href="#" class="nav-link hover:text-red-500 transition-colors duration-300">Post Layouts</a></li>
+                <li><a href="#" class="nav-link hover:text-red-500 transition-colors duration-300">Post Features</a></li>
+                <li><a href="#" class="nav-link hover:text-red-500 transition-colors duration-300">Features</a></li>
+                <li><a href="#" class="nav-link hover:text-red-500 transition-colors duration-300">Purchase</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <main>
+        <div class="container mx-auto px-4 relative w-full h-[60vh] md:h-[70vh] lg:h-[80vh] bg-gray-900 overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1549880338-65ddcdfd017b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80" alt="Cityscape with tall buildings" class="absolute inset-0 w-full h-full object-cover opacity-80">
+            <div class="absolute inset-0 flex items-end justify-start p-4 md:p-8">
+                <div class="w-full max-w-2xl bg-white bg-opacity-95 p-6 md:p-8 shadow-xl text-left">
+                    <p class="text-gray-500 text-sm uppercase font-semibold tracking-wide mb-2"><span class="border-b-2 border-red-500">February 1, 2018</span> <span class="mx-2">•</span> Featured <span class="mx-2">•</span> <a href="#" class="underline">6 Comments</a></p>
+                    <h1 class="text-3xl md:text-4xl font-bold mb-4 leading-tight">At daybreak of the fifteenth day of my search</h1>
+                    <p class="text-gray-600 text-base md:text-lg mb-4">When the amphitheater had cleared I crept stealthily to the top and as the great excavation lay...</p>
+                    <a href="#" class="text-red-500 font-semibold text-sm hover:underline transition">READ MORE →</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Latest Stories Section -->
+        <section class="container mx-auto px-4 py-16">
+            <div class="mb-8">
+                <p class="text-gray-500 text-sm uppercase font-semibold tracking-wide">Browse and read the latest stuff</p>
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-900">Latest Stories</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Story Card 1 -->
+                <article class="group relative bg-white overflow-hidden shadow-lg transform transition hover:scale-105 duration-300">
+                    <div class="absolute top-4 right-4 w-8 h-8 bg-red-500 shadow-md flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-camera"><path d="M14.5 13.5l-3-3L9 16l-3.5-3.5L2 15"/><path d="M22 8V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v2"/><rect width="20" height="12" x="2" y="8" rx="2"/><circle cx="12" cy="13" r="3"/></svg>
+                    </div>
+                    <img src="https://i.pinimg.com/1200x/07/46/bf/0746bfc0a4759b5b6c59df400bf1da6b.jpg" alt="A person watching the sunset" class="w-full h-56 object-cover">
+                    <div class="p-6">
+                        <p class="text-xs text-gray-500 uppercase font-semibold tracking-wide mb-2"><span class="border-b-2 border-red-500">April 11, 2019</span> <span class="mx-1">•</span> Photo, Trending</p>
+                        <h3 class="text-xl font-bold mb-2">The sunset faded to twilight</h3>
+                        <p class="text-gray-600 text-sm mb-4">I began walking, therefore, in a big curve, and then, after another change of course, continually looking a...</p>
+                        <a href="#" class="text-red-500 font-semibold text-sm hover:underline transition">Read More →</a>
+                    </div>
+                </article>
+
+                <!-- Story Card 2 -->
+                <article class="group relative bg-white overflow-hidden shadow-lg transform transition hover:scale-105 duration-300">
+                     <div class="absolute top-4 right-4 w-8 h-8 bg-red-500 shadow-md flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-camera"><path d="M14.5 13.5l-3-3L9 16l-3.5-3.5L2 15"/><path d="M22 8V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v2"/><rect width="20" height="12" x="2" y="8" rx="2"/><circle cx="12" cy="13" r="3"/></svg>
+                    </div>
+                    <img src="https://i.pinimg.com/1200x/af/54/df/af54df4f26cba724d59f79f36a1f0382.jpg" alt="Coffee being poured into a cup" class="w-full h-56 object-cover">
+                    <div class="p-6">
+                        <p class="text-xs text-gray-500 uppercase font-semibold tracking-wide mb-2"><span class="border-b-2 border-red-500">April 8, 2019</span> <span class="mx-1">•</span> Food</p>
+                        <h3 class="text-xl font-bold mb-2">Then going through some small strange motions</h3>
+                        <p class="text-gray-600 text-sm mb-4">A moderate incline runs towards the foot of a tall wall of granite that rises scattered. Once the...</p>
+                        <a href="#" class="text-red-500 font-semibold text-sm hover:underline transition">Read More →</a>
+                    </div>
+                </article>
+
+                <!-- Story Card 3 -->
+                <article class="group relative bg-white overflow-hidden shadow-lg transform transition hover:scale-105 duration-300">
+                     <div class="absolute top-4 right-4 w-8 h-8 bg-red-500 shadow-md flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-camera"><path d="M14.5 13.5l-3-3L9 16l-3.5-3.5L2 15"/><path d="M22 8V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v2"/><rect width="20" height="12" x="2" y="8" rx="2"/><circle cx="12" cy="13" r="3"/></svg>
+                    </div>
+                    <img src="https://i.pinimg.com/736x/bc/76/ed/bc76ede82fd795d58f9f95376f428d4c.jpg" alt="Motorcycles on a city street" class="w-full h-56 object-cover">
+                    <div class="p-6">
+                        <p class="text-xs text-gray-500 uppercase font-semibold tracking-wide mb-2"><span class="border-b-2 border-red-500">April 6, 2019</span> <span class="mx-1">•</span> Lifestyle</p>
+                        <h3 class="text-xl font-bold mb-2">Two long weeks I wandered</h3>
+                        <p class="text-gray-600 text-sm mb-4">Through two long weeks I wandered. At first, indeed, I had been guided only by the stars and fi...</p>
+                        <a href="#" class="text-red-500 font-semibold text-sm hover:underline transition">Read More →</a>
+                    </div>
+                </article>
+
+                <!-- Story Card 4 -->
+                <article class="group relative bg-white overflow-hidden shadow-lg transform transition hover:scale-105 duration-300">
+                     <div class="absolute top-4 right-4 w-8 h-8 bg-red-500 shadow-md flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-camera"><path d="M14.5 13.5l-3-3L9 16l-3.5-3.5L2 15"/><path d="M22 8V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v2"/><rect width="20" height="12" x="2" y="8" rx="2"/><circle cx="12" cy="13" r="3"/></svg>
+                    </div>
+                    <img src="https://images.unsplash.com/photo-1542382103362-e6e768393540?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60" alt="A person standing next to a river" class="w-full h-56 object-cover">
+                    <div class="p-6">
+                        <p class="text-xs text-gray-500 uppercase font-semibold tracking-wide mb-2"><span class="border-b-2 border-red-500">February 19, 2018</span> <span class="mx-1">•</span> Featured</p>
+                        <h3 class="text-xl font-bold mb-2">I shouted above the sudden noise</h3>
+                        <p class="text-gray-600 text-sm mb-4">I shouted above the sudden noise. She looked away from me downhill. The people were running a...</p>
+                        <a href="#" class="text-red-500 font-semibold text-sm hover:underline transition">Read More →</a>
+                    </div>
+                </article>
+
+                <!-- Story Card 5 -->
+                <article class="group relative bg-white overflow-hidden shadow-lg transform transition hover:scale-105 duration-300">
+                     <div class="absolute top-4 right-4 w-8 h-8 bg-red-500 shadow-md flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-camera"><path d="M14.5 13.5l-3-3L9 16l-3.5-3.5L2 15"/><path d="M22 8V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v2"/><rect width="20" height="12" x="2" y="8" rx="2"/><circle cx="12" cy="13" r="3"/></svg>
+                    </div>
+                    <img src="https://images.unsplash.com/photo-1533228399371-33291244e83c?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60" alt="A city street with cars and buildings" class="w-full h-56 object-cover">
+                    <div class="p-6">
+                        <p class="text-xs text-gray-500 uppercase font-semibold tracking-wide mb-2"><span class="border-b-2 border-red-500">January 15, 2018</span> <span class="mx-1">•</span> Featured, Photo</p>
+                        <h3 class="text-xl font-bold mb-2">At daybreak of the fifteenth day of my search</h3>
+                        <p class="text-gray-600 text-sm mb-4">When the amphitheater had cleared I crept stealthily to the top and as the great excavation lay...</p>
+                        <a href="#" class="text-red-500 font-semibold text-sm hover:underline transition">Read More →</a>
+                    </div>
+                </article>
+
+                <!-- Story Card 6 -->
+                <article class="group relative bg-white overflow-hidden shadow-lg transform transition hover:scale-105 duration-300">
+                     <div class="absolute top-4 right-4 w-8 h-8 bg-red-500 shadow-md flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-camera"><path d="M14.5 13.5l-3-3L9 16l-3.5-3.5L2 15"/><path d="M22 8V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v2"/><rect width="20" height="12" x="2" y="8" rx="2"/><circle cx="12" cy="13" r="3"/></svg>
+                    </div>
+                    <img src="https://images.unsplash.com/photo-1507721999238-d983416b9b32?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60" alt="A person standing with a camera" class="w-full h-56 object-cover">
+                    <div class="p-6">
+                        <p class="text-xs text-gray-500 uppercase font-semibold tracking-wide mb-2"><span class="border-b-2 border-red-500">January 10, 2018</span> <span class="mx-1">•</span> Photo</p>
+                        <h3 class="text-xl font-bold mb-2">The great excavation lay far from the plaza</h3>
+                        <p class="text-gray-600 text-sm mb-4">Far from the plaza and in an untenanted portion of the great dead city I had little difficulty in...</p>
+                        <a href="#" class="text-red-500 font-semibold text-sm hover:underline transition">Read More →</a>
+                    </div>
+                </article>
+            </div>
+             <div class="text-center mt-12">
+                <a href="#" class="inline-block px-8 py-3 bg-red-500 text-white font-semibold uppercase tracking-wide shadow-lg hover:bg-gray-700 transition-colors duration-300">More Posts</a>
+            </div>
+        </section>
+
+        <!-- Staff's Picks Section -->
+        <section class="container mx-auto px-4 py-16">
+            <div class="mb-8">
+                <p class="text-gray-500 text-sm uppercase font-semibold tracking-wide">You have to read this!</p>
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-900">Staff's Picks</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Staff's Pick 1 -->
+                <article class="group relative bg-gray-100 overflow-hidden shadow-lg flex flex-col md:flex-row transform transition hover:scale-105 duration-300">
+                    <div class="md:w-1/2 w-full h-64 md:h-auto overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1522881267566-1c8f49a37e8c?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60" alt="A scenic mountain view" class="w-full h-full object-cover">
+                        <div class="absolute top-4 right-4 w-8 h-8 bg-red-500 shadow-md flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-camera"><path d="M14.5 13.5l-3-3L9 16l-3.5-3.5L2 15"/><path d="M22 8V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v2"/><rect width="20" height="12" x="2" y="8" rx="2"/><circle cx="12" cy="13" r="3"/></svg>
+                        </div>
+                    </div>
+                    <div class="md:w-1/2 p-6 md:p-8 flex flex-col justify-between">
+                        <div>
+                            <p class="text-xs text-gray-500 uppercase font-semibold tracking-wide mb-2"><span class="border-b-2 border-red-500">April 1, 2019</span> <span class="mx-1">•</span> Photo</p>
+                            <h3 class="text-xl font-bold mb-2">The path up the tall mountain</h3>
+                            <p class="text-gray-600 text-sm mb-4">With a low cry I felt the ground give way beneath me...</p>
+                        </div>
+                        <a href="#" class="text-red-500 font-semibold text-sm hover:underline transition mt-4 md:mt-0">Read More →</a>
+                    </div>
+                </article>
+
+                <!-- Staff's Pick 2 -->
+                <article class="group relative bg-gray-100 overflow-hidden shadow-lg flex flex-col md:flex-row transform transition hover:scale-105 duration-300">
+                    <div class="md:w-1/2 w-full h-64 md:h-auto overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1543851508-d2e8b0b5c15e?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60" alt="A person on a boat in a lake" class="w-full h-full object-cover">
+                        <div class="absolute top-4 right-4 w-8 h-8 bg-red-500 shadow-md flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-camera"><path d="M14.5 13.5l-3-3L9 16l-3.5-3.5L2 15"/><path d="M22 8V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v2"/><rect width="20" height="12" x="2" y="8" rx="2"/><circle cx="12" cy="13" r="3"/></svg>
+                        </div>
+                    </div>
+                    <div class="md:w-1/2 p-6 md:p-8 flex flex-col justify-between">
+                        <div>
+                            <p class="text-xs text-gray-500 uppercase font-semibold tracking-wide mb-2"><span class="border-b-2 border-red-500">March 28, 2019</span> <span class="mx-1">•</span> Lifestyle</p>
+                            <h3 class="text-xl font-bold mb-2">Wandering through the deep blue lake</h3>
+                            <p class="text-gray-600 text-sm mb-4">I seemed to be floating in some strange, new dimension...</p>
+                        </div>
+                        <a href="#" class="text-red-500 font-semibold text-sm hover:underline transition mt-4 md:mt-0">Read More →</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12 mt-16">
+        <div class="container mx-auto px-4 text-center">
+            <div class="flex justify-center space-x-6 mb-6">
+                <a href="#" class="text-gray-400 hover:text-white transition"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-facebook"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+                <a href="#" class="text-gray-400 hover:text-white transition"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-twitter"><path d="M22 4s-.7 2.1-2 3.4c-.6.4-1.4.2-1.6.8-.2.5-.2 1.3.4 1.8 1.4 1.1 2.5 2.1 3.5 3.3.4.5.6 1.3.4 1.9-.2.5-1 .8-1.5.8-2 .1-3.6-1.5-4.8-3-.5-.6-1.3-1.4-2.2-1.4-1.2 0-2.3 1.2-3.6 2.5-.6.6-1.2 1.2-2 1.2-1.4 0-2.6-.8-3.6-1.8-.8-1.1-1.3-2.6-.9-4.2.3-1.2 1.2-2.1 2.3-2.8 1.4-.8 3-1.2 4.6-1.2 2.1 0 3.7.8 4.7 2 .8 1 .5 2.6-.3 3.5-1.1 1.2-2.3 2.5-3.6 3.4-.6.4-1.1 1.2-.8 2.1.3.8 1.1 1.3 1.9 1.3.8 0 1.5-.5 2-1 1.4-1.3 2.5-2.8 3.5-4.4.7-1.1 1-2.4.9-3.7-.1-1.4-.6-2.6-1.3-3.7-.8-1.2-1.8-2.3-2.9-3-.7-.5-1.5-.7-2.3-.6-1.2.2-2.1.8-2.7 1.9-.6 1.1-1 2.3-1 3.6 0 1.3.4 2.5 1 3.7.6 1.2 1.6 2.2 2.8 2.8.8.4 1.7.5 2.6.3 1-.1 1.8-.7 2.3-1.6.5-.9.7-2 .4-3-1.1-.9-2.3-1.8-3.4-2.7z"/></svg></a>
+                <a href="#" class="text-gray-400 hover:text-white transition"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-instagram"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg></a>
+            </div>
+            <p class="text-gray-400 text-sm">&copy; 2024 Gutenverse. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
